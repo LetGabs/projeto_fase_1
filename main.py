@@ -1,13 +1,6 @@
 
 #SISTEMA DE GERENCIAMENTO HOSPITALAR
-
-from funcoes import adicionar_paciente
-from funcoes import adicionar_medico
-from funcoes import pesquisar_paciente
-from funcoes import pesquisar_medico
-from funcoes import excluir_paciente
-from funcoes import excluir_medico
-from funcoes import sair
+import funcoes
 
 def menu():
     while True:
@@ -24,19 +17,19 @@ def menu():
         opcao = int(input("\n-----------> Digite a opção desejada: "))
 
         if opcao == 1:
-            adicionar_paciente()
+            funcoes.adicionar_paciente()
         elif opcao == 2:
-            adicionar_medico()
+            funcoes.adicionar_medico()
         elif opcao == 3:
-            pesquisar_paciente()
+            funcoes.pesquisar_paciente()
         elif opcao == 4:
-            pesquisar_medico()
+            funcoes.pesquisar_medico()
         elif opcao == 5:
-            excluir_paciente()
+            funcoes.excluir_paciente()
         elif opcao == 6:
-            excluir_medico()
+            funcoes.excluir_medico()
         elif opcao == 7:
-            sair()
+            funcoes.sair()
         else:
             print("Opção inválida. TENTE NOVAMENTE!")
 
